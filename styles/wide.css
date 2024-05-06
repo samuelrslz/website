@@ -7,11 +7,16 @@
     display: flex;
     margin-left: auto;
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
     width: 70%;
+    margin-bottom: -200px;
   }
 
   h1 {
     font-size: 3rem;
+  }
+
+  #cursor {
+    font-size: 70px;
   }
 }

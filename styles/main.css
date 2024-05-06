@@ -8,21 +8,40 @@
 }
 
 #caballo {
-  width: 90%;
+  z-index: -1;
+  width: 80%;
   display: flex;
   margin-left: auto;
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
   opacity: 0;
   filter: grayscale(100%);
   transition: filter 1.8s;
   transition: opacity 1.8s;
-  margin-bottom: -100px;
+  margin-bottom: -150px;
 }
 
 #main-home {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
+}
+
+#cursor {
+  display: inline; /* Make the cursor an inline element */
+  animation: blink-animation 1s infinite; /* Add blinking animation */
+  font-size: 40px;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #name-logo {
@@ -44,6 +63,7 @@ p {
 
 .colored {
   color: var(--secondary-color);
+  display: inline;
 }
 
 .second {
@@ -55,5 +75,15 @@ p {
 #first {
   overflow: hidden;
   position: relative;
-  height: 300px; /* Adjust height as needed */
+  height: 100vh; /* Adjust height as needed */
+}
+
+#contact-icons {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+}
+
+#contact-icons img {
+  width: 40px;
 }
