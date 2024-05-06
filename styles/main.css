@@ -7,6 +7,24 @@
   --accent-color: #2764ae;
 }
 
+#caballo {
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  position: relative;
+  bottom: 100px;
+  opacity: 0;
+  filter: grayscale(100%);
+  transition: filter 1.8s;
+  transition: opacity 1.8s;
+  margin-bottom: -100px;
+}
+
+#main-home {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #name-logo {
   width: 100px;
 }
@@ -17,6 +35,7 @@ header a {
 
 h1 {
   font-family: "Vollkorn", serif;
+  font-size: 2rem;
 }
 
 p {
@@ -31,4 +50,10 @@ p {
   width: 100%;
   background-color: var(--secondary-color);
   height: 400px;
+}
+
+#first {
+  overflow: hidden;
+  position: relative;
+  height: 300px; /* Adjust height as needed */
 }

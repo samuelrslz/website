@@ -1,0 +1,17 @@
+@media (min-width: 900px) {
+  #main-home {
+    max-width: 1200px;
+  }
+
+  #caballo {
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    bottom: 100px;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
