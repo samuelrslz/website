@@ -14,17 +14,18 @@ body {
 }
 
 #caballo {
-  z-index: -1;
+  z-index: -2;
   width: 80%;
-  display: flex;
+  display: block;
   margin-left: auto;
+  align-self: flex-start; /* Add this line */
   position: relative;
-  bottom: 150px;
+  bottom: 250px;
   opacity: 0;
   filter: grayscale(100%);
   transition: filter 1.8s;
   transition: opacity 1.8s;
-  margin-bottom: -150px;
+  margin-bottom: -250px;
 }
 
 #main-home {
@@ -133,6 +134,7 @@ p {
 
 #contact-icons {
   display: flex;
+  z-index: 1;
   width: 140px;
   justify-content: space-between;
 }
@@ -144,4 +146,89 @@ p {
 .second {
   text-align: center;
   padding-top: 2rem;
+}
+
+/* Animation */
+
+#loader {
+  position: relative;
+  z-index: -2;
+  top: 60px;
+  left: 40px;
+  margin-top: -2.7em;
+  margin-left: -2.7em;
+  width: 5.4em;
+  height: 5.4em;
+  background-color: var(--third);
+}
+
+#hill {
+  position: absolute;
+  z-index: -2;
+  width: 7.1em;
+  height: 7.1em;
+  top: 1.7em;
+  left: 1.7em;
+  background-color: transparent;
+  border-left: 0.25em solid var(--second);
+  transform: rotate(45deg);
+}
+
+#hill:after {
+  content: "";
+  position: absolute;
+  width: 7.1em;
+  height: 7.1em;
+  left: 0;
+  background-color: var(--third);
+}
+
+#box {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -0.1em;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  border: 0.25em solid var(--second);
+  border-radius: 15%;
+  transform: translate(0, -1em) rotate(-45deg);
+  animation: push 2.5s cubic-bezier(0.79, 0, 0.47, 0.97) infinite;
+}
+
+@keyframes push {
+  0% {
+    transform: translate(0, -1em) rotate(-45deg);
+  }
+  5% {
+    transform: translate(0, -1em) rotate(-50deg);
+  }
+  20% {
+    transform: translate(1em, -2em) rotate(47deg);
+  }
+  25% {
+    transform: translate(1em, -2em) rotate(45deg);
+  }
+  30% {
+    transform: translate(1em, -2em) rotate(40deg);
+  }
+  45% {
+    transform: translate(2em, -3em) rotate(137deg);
+  }
+  50% {
+    transform: translate(2em, -3em) rotate(135deg);
+  }
+  55% {
+    transform: translate(2em, -3em) rotate(130deg);
+  }
+  70% {
+    transform: translate(3em, -4em) rotate(217deg);
+  }
+  75% {
+    transform: translate(3em, -4em) rotate(220deg);
+  }
+  100% {
+    transform: translate(0, -1em) rotate(-225deg);
+  }
 }

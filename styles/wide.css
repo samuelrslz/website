@@ -7,9 +7,10 @@
     display: flex;
     margin-left: auto;
     position: relative;
-    bottom: 200px;
-    width: 70%;
-    margin-bottom: -200px;
+    right: 20px;
+    bottom: 360px;
+    width: 60%;
+    margin-bottom: -360px;
   }
 
   h1 {
@@ -18,5 +19,10 @@
 
   #cursor {
     font-size: 70px;
+  }
+
+  #loader {
+    top: -40px;
+    left: 200px;
   }
 }
