@@ -2,9 +2,15 @@
 
 /* Define color variables */
 :root {
-  --primary-color: #000000;
-  --secondary-color: #d15f43;
-  --accent-color: #2764ae;
+  --first: #12130f;
+  --second: #d15f43;
+  --third: #eeeeee;
+  --fourth: #1a659e;
+  --fifth: #248433;
+}
+
+body {
+  background-color: var(--third);
 }
 
 #caballo {
@@ -44,6 +50,12 @@
   }
 }
 
+header a {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
 #name-logo {
   width: 100px;
 }
@@ -52,30 +64,71 @@ header a {
   text-align: right;
 }
 
+#introduction p {
+  margin-top: -20px;
+}
+
 h1 {
   font-family: "Vollkorn", serif;
   font-size: 2rem;
+  color: var(--first);
 }
 
 p {
+  font-size: 1.2rem;
   font-family: "Teachers", sans-serif;
 }
 
+/* FOR ICONS CHANGING */
+
+.image-link {
+  display: inline-block;
+  position: relative;
+}
+
+.image-link img {
+  opacity: 1;
+  width: 40px;
+  transition: opacity 0.3s ease; /* Add a transition for opacity */
+}
+
+.image-link img.fade-out {
+  opacity: 1; /* Fade out the image */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-link:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay-content {
+  color: white;
+}
+
+/* END FOR CHANGING IMAGES */
+
 .colored {
-  color: var(--secondary-color);
+  color: var(--second);
   display: inline;
 }
 
 .second {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--second);
   height: 400px;
-}
-
-#first {
-  overflow: hidden;
-  position: relative;
-  height: 100vh; /* Adjust height as needed */
 }
 
 #contact-icons {
@@ -86,4 +139,9 @@ p {
 
 #contact-icons img {
   width: 40px;
+}
+
+.second {
+  text-align: center;
+  padding-top: 2rem;
 }

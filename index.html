@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samuel Rios-Lazo</title>
+    <meta name="description" content="Samuel Rios-Lazo's Website. Proficient Software & Web Developer. 4.0 GPA at BYU-Idaho.">
+    <meta name="keywords" content="software, development, websites, web, design">
+    <meta name="robots" content="index, follow">
+    <!-- For Social Metatags -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Description of your page">
+    <meta property="og:url" content="https://www.example.com/page-url">
+    <meta property="og:image" content="https://www.example.com/image.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="Description of your page">
+    <meta name="twitter:image" content="https://www.example.com/image.jpg">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/wide.css" />
+    <link rel="icon" href="images/favicon_io/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="index.html"><img id="name-logo" src="images/name-logo.png"></a>
+        <a href="index.html" class="glitch"><img id="name-logo" src="images/name-logo.png"></a>
     </header>
     <main id="main-home">
         <div class="first">
@@ -18,19 +32,37 @@
                 <span id="cursor">|</span> <!-- Cursor element as a span -->
                 <h1>Software & Web</h1>
                 <h1>Developer</h1>
+                <p>Say hi :&#41</p>
                 <div id="contact-icons">
-                    <a href=""><img src="images/github-icon.png" alt=""></a>
-                    <a href=""><img src="images/linkedin-icon.png" alt=""></a>
-                    <a href=""><img src="images/mail-icon.webp" alt=""></a>
+                    <a href="#" class="image-link" id="github-link"><img src="images/github-icon.png" alt=""></a>
+                    <a href="#" class="image-link" id="linkedin-link"><img src="images/linkedin-icon.png" alt=""></a>
+                    <a href="#" class="image-link" id="mail-link"><img src="images/mail-icon.webp" alt=""></a>
                 </div>
             </div>
             <img id="caballo" src="images/caballo.webp" alt="Samuel riding a horse">
         </div>
         <div class="second">
+            <h1>Site under construction</h1>
         </div>
     </main>
     <script src="scripts/type.js"></script>
     <script src="scripts/loadImage.js"></script>
+    <script src="scripts/hoverIcons.js"></script>
+    <script src="scripts/copyEmail.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Samuel Rios-Lazo",
+          "url": "https://www.rioslazo.org",
+          "logo": "https://www.rioslazo.org/images/name-logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-234-567-8910",
+            "contactType": "Customer service"
+          }
+        }
+        </script>
     <footer>
 
     </footer>
