@@ -15,7 +15,7 @@ body {
 
 #caballo {
   z-index: -2;
-  width: 80%;
+  width: 60%;
   display: block;
   margin-left: auto;
   align-self: flex-start; /* Add this line */
