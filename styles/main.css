@@ -28,6 +28,10 @@ body {
   margin-bottom: -250px;
 }
 
+header nav {
+  display: none;
+}
+
 #main-home {
   width: 92%;
   margin: 0 auto;
