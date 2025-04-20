@@ -133,7 +133,8 @@ p {
 .second {
   width: 100%;
   background-color: var(--second);
-  height: 400px;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 #contact-icons {
@@ -145,11 +146,6 @@ p {
 
 #contact-icons img {
   width: 40px;
-}
-
-.second {
-  text-align: center;
-  padding-top: 2rem;
 }
 
 /* Animation */
@@ -199,6 +195,26 @@ p {
   border-radius: 15%;
   transform: translate(0, -1em) rotate(-45deg);
   animation: push 2.5s cubic-bezier(0.79, 0, 0.47, 0.97) infinite;
+}
+
+/* What I've been up to */
+
+#projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.upto {
+  width: 300px;
+}
+
+.upto img {
+  width: 300px;
+}
+
+.upto p {
 }
 
 @keyframes push {
