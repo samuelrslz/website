@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You 💕</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url("images/kauai.webp") center / cover no-repeat;
+    }
+
+    /* Gradient overlay for contrast */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.65)
+      );
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    p {
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .due-date {
+      margin-top: 1.2rem;
+      font-weight: 600;
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+    }
+
+    .redirect {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .dots::after {
+      content: "";
+      animation: dots 1.4s infinite;
+    }
+
+    @keyframes dots {
+      0% { content: ""; }
+      33% { content: "."; }
+      66% { content: ".."; }
+      100% { content: "..."; }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="content">
+      <h1>Thank you so much 💕</h1>
+
+      <p>
+        We’re so grateful for your love and support as we get ready to welcome
+        our little one.
+      </p>
+
+      <div class="due-date">
+        Twins arriving: <strong>Jun 25, 2026</strong> 🍼
+      </div>
+
+      <div class="redirect">
+        Taking you to our registry<span class="dots"></span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    setTimeout(() => {
+      window.location.replace("https://www.amazon.com/baby-reg/whitney-rios-lazo-june-2026-duvall/3KOMM3KBFDNNX");
+    }, 5000);
+  </script>
+</body>
+</html>
